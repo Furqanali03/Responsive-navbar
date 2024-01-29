@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.img-1{
+   width: 10rem !important;
+}
+
+ul{
+    padding: 1.2rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+li{
+    font-size: 1.2rem;
+}
+
+#icon{
+    font-size: 40px;
+    color: red;
+    display: none;
+}
+
+.carousel {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    max-width: 100%; /* Ensures the image resizes with its container */
+    height: auto;
+  }
+
+/* Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more. */
+
+@media(max-width:1160px){
+    ul{
+        display: none;
+    }
+    #icon{
+        display: block;
+    }
+    .crousel{
+        min-width: 100% 
+    }
+   
+}
+@media (max-width: 1990px) {
+    li{
+        font-size: 2rem; 
+    }
+    .img-1{
+        width: 20rem !important;
+     }
+     
+    .carousel img {
+      min-width: 100% /* Set the maximum width at the 1200px breakpoint */
+    }
+  }
+
+@media (min-width: 2000px) {
+    li{
+        font-size: 3rem; 
+    }
+    .img-1{
+        width: 30rem !important;
+     }
+     
+    .carousel img {
+      min-width: 100% /* Set the maximum width at the 1200px breakpoint */
+    }
+  }
+
